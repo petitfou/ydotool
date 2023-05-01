@@ -1,0 +1,3 @@
+# ydotool is still under developement and is unstable.
+# For this reason, only static libraries are shipped.
+statically-linked-binary
