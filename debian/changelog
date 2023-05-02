@@ -1,0 +1,31 @@
+ydotool (1.0.4-2) jammy; urgency=medium
+
+  * Fix debian/rules
+
+ -- hector <hector.cao@canonical.com>  Tue, 02 May 2023 12:15:33 +0200
+
+ydotool (1.0.4-1) jammy; urgency=medium
+
+  * Bump to 1.0.4
+
+ -- Hector CAO <hector.cao@canonical.com>  Thu, 30 Mar 2023 10:18:49 +0200
+
+ydotool (0.1.8-3) unstable; urgency=medium
+
+  * d/control: Rules-Requires-Root: no.
+  * depend on livevdevplus >= 0.1.1-2. (Closes: #959905)
+  * d/rules: -DCMAKE_POSITION_INDEPENDENT_CODE=ON.
+
+ -- Alexandre Viau <aviau@debian.org>  Tue, 22 Dec 2020 12:53:31 -0500
+
+ydotool (0.1.8-2) unstable; urgency=medium
+
+  * Improve ydotoold long description.
+
+ -- Alexandre Viau <aviau@debian.org>  Tue, 11 Feb 2020 17:27:57 -0500
+
+ydotool (0.1.8-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #951138)
+
+ -- Alexandre Viau <aviau@debian.org>  Tue, 11 Feb 2020 17:17:38 -0500

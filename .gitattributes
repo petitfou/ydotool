@@ -1,0 +1,5 @@
+.gitattributes export-ignore
+debian export-ignore
+ubuntu export-ignore
+.github export-ignore
+.gitignore export-ignore

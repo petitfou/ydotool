@@ -1,0 +1,55 @@
+Source: ydotool
+Section: utils
+Priority: optional
+Maintainer: Alexandre Viau <aviau@debian.org>
+Build-Depends: debhelper (>=12),
+               cmake,
+               dh-exec,
+               pkg-config,
+               libevdevplus-dev (>=0.1.1-2),
+               libuinputplus-dev,
+               libboost-program-options-dev,
+               scdoc
+Standards-Version: 4.5.0
+Homepage: https://github.com/ReimuNotMoe/ydotool
+Vcs-Git: https://salsa.debian.org/debian/ydotool.git
+Vcs-Browser: https://salsa.debian.org/debian/ydotool
+Rules-Requires-Root: no
+
+Package: ydotool
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: Command-line automation tool - cli
+ Generic Linux command-line automation tool
+ .
+ ydotool works differently from xdotool. xdotool
+ sends X events directly to X server, while ydotool
+ uses the uinput framework of Linux kernel to emulate
+ an input device.
+ .
+ When ydotool runs and creates an virtual input device,
+ it will take some time for your graphical environment
+ (X11/Wayland) to recognize and enable the virtual
+ input device. (Usually done by udev)
+ .
+ This package contains the command-line utility.
+
+Package: ydotoold
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: Command-line automation tool - daemon
+ Generic Linux command-line automation tool
+ .
+ ydotool works differently from xdotool. xdotool
+ sends X events directly to X server, while ydotool
+ uses the uinput framework of Linux kernel to emulate
+ an input device.
+ .
+ When ydotool runs and creates an virtual input device,
+ it will take some time for your graphical environment
+ (X11/Wayland) to recognize and enable the virtual
+ input device. (Usually done by udev)
+ .
+ This package contains the daemon.
